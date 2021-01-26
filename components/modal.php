@@ -1,5 +1,49 @@
-<div class="register-box">
-  <div class="register-box-body">
+<?php include '../database/connection.php'; ?>
+<?php include PATH.DS.'header-footer'.DS.'header.php'; ?>
+  <style>
+    .example-modal .modal {
+      position: relative;
+      top: auto;
+      bottom: auto;
+      right: auto;
+      left: auto;
+      display: block;
+      z-index: 1;
+    }
+
+    .example-modal .modal {
+      background: transparent !important;
+    }
+  </style>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box box-default">
+            <div class="box-header with-border">
+              <h3 class="box-title">Modal Examples</h3>
+            </div>
+            <div class="box-body">
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
+              new user
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="modal fade" id="modal-default">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Add new user</h4>
+              </div>
+              <div class="modal-body">
+              <div class="register-box-body">
     <p class="login-box-msg">Register a new membership</p>
 
     <form action="" method="post" nctype="multipart/form-data">
@@ -92,5 +136,16 @@
       increaseArea: '20%' /* optional */
     });
   });
-</script>
-
+</script> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        
+<?php include PATH.DS.'header-footer'.DS.'footer.php'; ?>

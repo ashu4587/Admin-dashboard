@@ -1,8 +1,4 @@
-<body class="hold-transition login-page">
-<div class="login-box">
-  <div class="login-logo">
-    <a href="<?php echo URL;?>/Admin/dashboard.php"><b>Admin</b>LTE</a>
-  </div>
+
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
