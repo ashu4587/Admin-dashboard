@@ -2,7 +2,7 @@
 <div class="wrapper">
 <header class="main-header">
     <!-- Logo -->
-    <a href="<?php echo URL;?>/Admin/dashboard.php" class="logo">
+    <a href="<?php echo URL;?>frontpage/frontpage-crud.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <!-- logo for regular state and mobile devices -->
       <img src="<?php echo URL;?>images/BMW.png" style="height:55px; width:55px; margin-top:-5px; margin-left:-20px">

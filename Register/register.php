@@ -1,11 +1,9 @@
 <div class="register-box">
-  <div class="register-logo">
-    <a href="<?php echo URL;?>/Admin/dashboard.php"><b>Admin</b>LTE</a>
+  <div class="register-logo"  style="margin-bottom:-17px;" >
+    <a  href="<?php echo URL;?>frontpage/frontpage-crud.php"><b>BMW &nbsp;</b>BIKES</a>
   </div>
-
   <div class="register-box-body">
     <p class="login-box-msg">Register a new membership</p>
-
     <form action="" method="post" nctype="multipart/form-data">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" name="username" placeholder="username">

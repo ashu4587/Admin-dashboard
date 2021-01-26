@@ -8,18 +8,19 @@
 		<div class="search">
 		<!--icon----------->
 		<i class="fas fa-search"></i>
-		<input placeholder="Search" type="text" />
+		<input placeholder="Search...." type="text" />
 		</div>
 
 		</div>
     <!--img--------->
     <div class="m-img">
-    <img alt="" src="<?php echo URL.'images'.DS.'BMW.png';?>" />    
+    <img alt="" src="<?php echo URL.'images'.DS.'a.png';?>" />    
     </div>
 	<!--text------------>
 		<div class="m-text">
-	<h1>Su<font>mm</font>er</h1>
-	<h2>Collect<font>ion</font></h2>
+  <h1><font>ju</font>st</h1>
+  <h2>Lau<font>nched</font></h2>
+  <!-- <h2> summer collection</h2> -->
 	<!--btn------------>
 	<a class="m-btn" href="#">Details</a>
 	</div>
@@ -108,7 +109,7 @@
 	<!--text-->
 	<div class="brand-text">
 		<!--heading-->
-		<h3>Our Brand</h3>
+		<h3>Our <font>Brand</font></h3>
 		<h4>Small Shoes 2020 New Arrivals Mini Messenger <font>Classic Shoes</font> </h4>
 		<!--details-->
 		<p>In porttitor elit ac mi placerat hendrerit. Morbi accumsan, erat in ullamcorper consectetur, nisi erat efficitur eros, sagittis tristique odio turpis vitae dui. Vestibulum gravida est ut erat pretium, non pretium diam feugiat. Integer egestas suscipit lorem ac fermentum. Integer at mauris vitae justo sagittis dapibus. Pellentesque sit amet nisl vitae orci vehicula faucibus. Fusce et lat, feugiat est.</p>
@@ -199,7 +200,6 @@
 	</section>
 	<!--footer--------------------->
 	<footer>
-		<h3>LOGO</h3>
 		<!--footer-menu---------------->
 		<ul class="footer-menu">
 			<li><a href="#">Man</a></li>

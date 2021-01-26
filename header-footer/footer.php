@@ -1,10 +1,15 @@
 <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.13
-    </div>
-    <strong>Copyright &copy; 2014-2019 <a href="<?php echo URL;?>/Admin/dashboard.php">AdminLTE</a>.</strong> All rights
-    reserved.
-  </footer>
+  <div style="margin-right:1460px; margin-bottom:10px;">
+    <a href = "<?php echo URL;?>frontpage/frontpage-crud.php"><img src="<?php echo URL;?>images/LOGO.png" style="height:60px; width:60px;"></a>
+  </div>
+  <div class="pull-right hidden-xs" style="float: right; margin-top:-40px" >
+    <b>Version</b> 2.4.13
+    <strong>
+      Copyright &copy; 2014-2021
+      <a href="<?php echo URL;?>frontpage/frontpage-crud.php">BMW | <small>BIKES</small></a>.
+    </strong>     
+  </div>
+</footer>
 <!-- jQuery 3 -->
 <script src="<?php echo URL;?>js/jquery.min.js"></script>
 <script src="<?php echo URL;?>js/fontawesome.js"></script>

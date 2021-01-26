@@ -38,6 +38,7 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo URL; ?>Admin/dashboard.php"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
             <li class="active"><a href="<?php echo URL; ?>lisiting/listing.php"><i class="fa fa-circle-o"></i>Listing</a></li>
+            <li>
           </ul>
         </li>
         <li class="treeview">
