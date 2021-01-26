@@ -4,9 +4,9 @@
     <!-- Logo -->
     <a href="<?php echo URL;?>/Admin/dashboard.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <img src="<?php echo URL;?>images/BMW.png" style="height:55px; width:55px; margin-top:-5px; margin-left:-20px">
+    BMW
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
