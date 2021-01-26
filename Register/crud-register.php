@@ -36,9 +36,7 @@
       'occu'     => $occupation,
     ]);
   }
-  
   include PATH.DS.'header-footer'.DS.'header.php';
-  include PATH.DS.'header-footer'.DS.'navbar.php';
   include PATH.DS.'Register'.DS.'register.php';
   include PATH.DS.'header-footer'.DS.'footer.php';
 ?>
