@@ -1,4 +1,4 @@
-<body class="hold-transition login-page">
+
 <div class="login-box">
 <div class="register-logo"  style="margin-bottom:15px;" >
     <a  href="<?php echo URL;?>frontpage/frontpage-crud.php"><b>BMW &nbsp;</b>BIKES</a>
