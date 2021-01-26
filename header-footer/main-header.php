@@ -2,11 +2,11 @@
 <div class="wrapper">
 <header class="main-header">
     <!-- Logo -->
-    <a  class="logo" href = "#"><img src="<?php echo URL;?>images/bmw.png" style="height:60px; width:60px; margin-top:-5px; margin-left:-20px">
-    BMW
-    </a>
+    <a href="<?php echo URL;?>/Admin/dashboard.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-    
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Admin</b>LTE</span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->

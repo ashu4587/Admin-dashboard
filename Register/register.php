@@ -1,4 +1,8 @@
 <div class="register-box">
+  <div class="register-logo">
+    <a href="<?php echo URL;?>/Admin/dashboard.php"><b>Admin</b>LTE</a>
+  </div>
+
   <div class="register-box-body">
     <p class="login-box-msg">Register a new membership</p>
 
