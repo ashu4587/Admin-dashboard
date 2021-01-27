@@ -1,11 +1,10 @@
-
 <div class="posts" style="height:850px; margin-top:-50px;">
 <div class="login-box">
 <div class="register-logo"  style="margin-left:70px;" >
     <a  href="<?php echo URL;?>frontpage/frontpage-crud.php"><b>BMW &nbsp;</b>BIKES</a>
   </div>
   <!-- /.login-logo -->
-  
+  <center><p style="margin-left:40px;"><?php echo $msg;?></p></center>
   <div class="login-box-body" style="width: 700px; margin-left: -120px;" >
     <h4 class="login-box-msg">Add Your posts here</h4>
 

@@ -1,6 +1,8 @@
 <?php
   include '../database/connection.php';
-  if(isset($_POST['post'])){
+  try{
+    $msg = "";
+    if(isset($_POST['post'])){
     $username    = "ashu";
     $bike        = $_POST['bike'];
     $model_no    = $_POST['model_no'];
@@ -19,7 +21,7 @@
     $file_type     = $_FILES ['bike_image']['size'];
     $file_type     = $_FILES ['bike_image']['type'];
     $file_type     = $_FILES ['bike_image']['error'];
-    $filefolder    = PATH.DS.'file_uploads_posts'.DS.$bike_image;
+    $filefolder    =  '../file_uploads_posts/'.$bike_image;
     $resolution    = '"height="100" width="100"';
   
     $filechange    = explode('.',$bike_image);
@@ -46,8 +48,11 @@
       'bimage'  => $filefolder,
       'dis'     => $discription,
     ]);
-    // debug($_POST);
-  }
+    $msg= "Posted Succesfully";
+    }
+  }catch(PDOException $e){
+    $msg= "Error :There is an error to Post Data ".$e->getMessage();
+  } 
 
   include PATH.DS.'header-footer'.DS.'header.php';
   include PATH.DS.'header-footer'.DS.'main-header.php';

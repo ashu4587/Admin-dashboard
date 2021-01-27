@@ -13,11 +13,8 @@
 
 		</div>
     <!--img--------->
-		<?php foreach($data as $bikes){
-    echo $bikes['id'];
-};?>
     <div class="m-img">
-    <img alt="<?php echo($bikes['id']); ?>" src="<?php echo $bikes['bike_image'];?>"/>  
+    <img alt="<?php echo($latest[0]['id']); ?>" src="<?php echo $latest[0]['bike_image'];?>"/>  
     </div>
 	<!--text------------>
 		<div class="m-text">
@@ -25,8 +22,8 @@
   <h2>Lau<font>nched</font></h2>
   <!-- <h2> summer collection</h2> -->
 	<!--btn------------>
-	<h3><font><?php echo $bikes['bike'];?></font></h3>
-	<b><a class="price"href="#"><?php echo $bikes['price'];?> <small>INR</small></a></b>
+	<h3><font><?php echo $latest[0]['bike'];?></font></h3>
+	<b><a class="price"href="#"><?php echo $latest[0]['price'];?> <small>INR</small></a></b>
 	<a class="m-btn" href="#">Details</a>
 	</div>
 	<!--social-------->
@@ -42,7 +39,7 @@
 	<section class="product">
 		<!--heading------------>
 	<div class="p-heading">
-		<h3>Trendy <font>Arri</font>vals</h3>
+		<h3>New<font>Arri</font>vals</h3>
 	</div>
 	<!--product-container----------------->
 	<div class="product-container">
@@ -51,13 +48,15 @@
 	<div class="p-box">
 	<img alt="<?php echo($bikes['id']); ?>" src="<?php echo $bikes['bike_image'];?>" />
 	<!--details--------->
-	<p><?php echo $bikes['bike'];?></p>
+	<b><?php echo $bikes['bike'];?></b>
 	<!--price--->
 	<b><a class="price"href="#"><?php echo $bikes['price'];?> <small>INR</small></a></b>
 	<!--buy-btn-->
 	<a class="buy-btn" href="#">More Details</a>
 	</div>
 	<?php } ?>
+	</div>
+	
 	<!--box-2------------>
 
 	</section>
@@ -66,84 +65,41 @@
 	<!--text-->
 	<div class="brand-text">
 		<!--heading-->
-		<h3>Our <font>Brand</font></h3>
-		<h4>Small Shoes 2020 New Arrivals Mini Messenger <font>Classic Shoes</font> </h4>
+		<h3>Most <font>Expensive</font></h3>
+		<h4><?php echo $pricebased[0]['bike'];?> Bike 2021 New Arrivals Mini Messenger in <font>BMW Super Bikes</font> </h4>
 		<!--details-->
-		<p>In porttitor elit ac mi placerat hendrerit. Morbi accumsan, erat in ullamcorper consectetur, nisi erat efficitur eros, sagittis tristique odio turpis vitae dui. Vestibulum gravida est ut erat pretium, non pretium diam feugiat. Integer egestas suscipit lorem ac fermentum. Integer at mauris vitae justo sagittis dapibus. Pellentesque sit amet nisl vitae orci vehicula faucibus. Fusce et lat, feugiat est.</p>
+		<p><?php echo $pricebased[0]['bike'];?> bike price starts at <?php echo $pricebased[0]['price'];?> RS. BMW offers 11 new bike models and 11 upcoming models in India. The most popular BMW bikes are G 310 R , S 1000 RR and G 310 GS . The expensive BMW bike is S 1000 RR which is priced at Rs. 23.75 Lakh . The upcoming BMW bikes include R nineT , M 1000 RR and F 750 GS .</p>
+	<b><?php echo $pricebased[0]['bike'];?></b><br>
+	<!--price--->
+	<b><a class="price"href="#"><?php echo $pricebased[0]['price'];?><small> INR</small></a></b>
+	<!--buy-btn-->
+	<a class="btn-expensive" href="#">More Details</a>
 	</div>
+	</div>
+
 	<!--img-->
-	<div class="brand-img"><img src="images/mobile.png" /></div>
+	<div class="brand-img"><img src="<?php echo $pricebased[0]['bike_image'];?>"/></div>
 	</section>
 	<!--watches------------------->
 	<section class="product">
 		<!--heading------------>
 	<div class="p-heading">
-		<h3>Watch<font>es Show</font>case</h3>
+		<h3>Low <font> Priced</font> Bikes</h3>
 	</div>
 	<!--product-container----------------->
 	<div class="product-container">
 		<!--box-1------------>
+		<?php foreach($pricelow as $cheapbike){?>
 		<div class="p-box">
-		<img alt="1" src="images/w1.png" />
+		<img alt="1" src="<?php echo $cheapbike['bike_image'];?>" />
 		<!--details--------->
-		<p>Fashion Silver Chain Watch</p>
+		<b><?php echo $cheapbike['bike'];?></b>
 		<!--price--->
-		<a class="price" href="#">$23.3</a>
+		<a class="price" href="#"><?php echo $cheapbike['price'];?><small> INR</small></a>
 		<!--buy-btn-->
-		<a class="buy-btn" href="#">Add To Cart</a>
+		<a class="buy-btn" href="#">More Details</a>
 		</div>
-		<!--box-2------------>
-		<div class="p-box">
-			<img alt="2" src="images/w2.png" />
-			<!--details--------->
-			<p>Fashion Genuine Chain Watch</p>
-			<!--price--->
-			<a class="price" href="#">$30.3</a>
-			<!--buy-btn-->
-			<a class="buy-btn" href="#">Add To Cart</a>
-			</div>
-		<!--box-3------------>
-		<div class="p-box">
-			<img alt="3" src="images/w3.png" />
-			<!--details--------->
-			<p>Fashion Chain Watch.</p>
-			<!--price--->
-			<a class="price" href="#">$13.3</a>
-			<!--buy-btn-->
-			<a class="buy-btn" href="#">Add To Cart</a>
-			</div>
-		<!--box-4------------>
-		<div class="p-box">
-			<img alt="4" src="images/w4.png" />
-			<!--details--------->
-			<p>Fashion Black Chain Watch</p>
-			<!--price--->
-			<a class="price" href="#">$33.3</a>
-			<!--buy-btn-->
-			<a class="buy-btn" href="#">Add To Cart</a>
-			</div>
-		<!--box-5------------>
-		<div class="p-box">
-			<img alt="5" src="images/w5.png" />
-			<!--details--------->
-			<p>Fashion Lether  Watch</p>
-			<!--price--->
-			<a class="price" href="#">$11.3</a>
-			<!--buy-btn-->
-			<a class="buy-btn" href="#">Add To Cart</a>
-			</div>
-		<!--box-6------------>
-		<div class="p-box">
-			<img alt="6" src="images/w6.png" />
-			<!--details--------->
-			<p>Fashion Forign Watch</p>
-			<!--price--->
-			<a class="price" href="#">$43.3</a>
-			<!--buy-btn-->
-			<a class="buy-btn" href="#">Add To Cart</a>
-			</div>
-		</div>
-
+		<?php }?>
 	</section>
 	<!--subscribe------------------------->
 	<section class="subcribe-container">
