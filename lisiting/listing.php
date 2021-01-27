@@ -1,6 +1,6 @@
 <?php 
   include '../database/connection.php';
-  $fetch   = "SELECT * FROM `".REGISTER."`";
+  $fetch   = "SELECT * FROM `".REGISTER."` ORDER BY `id` DESC";
   $listing = $connection->prepare($fetch);
   $listing->execute();
   $data    = $listing->fetchAll(PDO::FETCH_ASSOC);

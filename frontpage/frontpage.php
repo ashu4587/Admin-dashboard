@@ -13,8 +13,11 @@
 
 		</div>
     <!--img--------->
+		<?php foreach($data as $bikes){
+    echo $bikes['id'];
+};?>
     <div class="m-img">
-    <img alt="" src="<?php echo URL.'images'.DS.'a.png';?>" />    
+    <img alt="<?php echo($bikes['id']); ?>" src="<?php echo $bikes['bike_image'];?>"/>  
     </div>
 	<!--text------------>
 		<div class="m-text">
@@ -22,6 +25,8 @@
   <h2>Lau<font>nched</font></h2>
   <!-- <h2> summer collection</h2> -->
 	<!--btn------------>
+	<h3><font><?php echo $bikes['bike'];?></font></h3>
+	<b><a class="price"href="#"><?php echo $bikes['price'];?> <small>INR</small></a></b>
 	<a class="m-btn" href="#">Details</a>
 	</div>
 	<!--social-------->
@@ -42,66 +47,18 @@
 	<!--product-container----------------->
 	<div class="product-container">
 	<!--box-1------------>
+	<?php foreach($data as $bikes){ ?>
 	<div class="p-box">
-	<img alt="1" src="<?php echo URL.'images'.DS.'c.jpg';?>" />
+	<img alt="<?php echo($bikes['id']); ?>" src="<?php echo $bikes['bike_image'];?>" />
 	<!--details--------->
-	<p>Black Genuine Leather Bags.</p>
+	<p><?php echo $bikes['bike'];?></p>
 	<!--price--->
-	<a class="price" href="#">$23.3</a>
+	<b><a class="price"href="#"><?php echo $bikes['price'];?> <small>INR</small></a></b>
 	<!--buy-btn-->
-	<a class="buy-btn" href="#">Add To Cart</a>
+	<a class="buy-btn" href="#">More Details</a>
 	</div>
+	<?php } ?>
 	<!--box-2------------>
-	<div class="p-box">
-		<img alt="2" src="<?php echo URL.'images'.DS.'c.jpg';?>" />
-		<!--details--------->
-		<p>Black Genuine Leather Bags.</p>
-		<!--price--->
-		<a class="price" href="#">$30.3</a>
-		<!--buy-btn-->
-		<a class="buy-btn" href="#">Add To Cart</a>
-		</div>
-	<!--box-3------------>
-	<div class="p-box">
-		<img alt="3" src="<?php echo URL.'images'.DS.'c.jpg';?>" />
-		<!--details--------->
-		<p>Black Genuine Leather Bags.</p>
-		<!--price--->
-		<a class="price" href="#">$13.3</a>
-		<!--buy-btn-->
-		<a class="buy-btn" href="#">Add To Cart</a>
-		</div>
-	<!--box-4------------>
-	<div class="p-box">
-		<img alt="4" src="<?php echo URL.'images'.DS.'a.jpg';?>" />
-		<!--details--------->
-		<p>Black Genuine Leather Bags.</p>
-		<!--price--->
-		<a class="price" href="#">$33.3</a>
-		<!--buy-btn-->
-		<a class="buy-btn" href="#">Add To Cart</a>
-		</div>
-	<!--box-5------------>
-	<div class="p-box">
-		<img alt="5" src="<?php echo URL.'images'.DS.'b.jpg';?>" />
-		<!--details--------->
-		<p>Black Genuine Leather Bags.</p>
-		<!--price--->
-		<a class="price" href="#">$11.3</a>
-		<!--buy-btn-->
-		<a class="buy-btn" href="#">Add To Cart</a>
-		</div>
-	<!--box-6------------>
-	<div class="p-box">
-		<img alt="6" src="images/b6.png" />
-		<!--details--------->
-		<p>Black Genuine Leather Bags.</p>
-		<!--price--->
-		<a class="price" href="#">$43.3</a>
-		<!--buy-btn-->
-		<a class="buy-btn" href="#">Add To Cart</a>
-		</div>
-	</div>
 
 	</section>
 	<!--our-brand-section----------------->

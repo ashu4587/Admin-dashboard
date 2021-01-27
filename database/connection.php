@@ -8,6 +8,7 @@
     define('USER','root');
     define('PASSWORD','');
     define('REGISTER','register');
+    define('POSTS','posts');
 
     $connection = new PDO(HOST, USER, PASSWORD);
     //echo "you are succesfully connected to databse";
@@ -31,11 +32,11 @@
   
   //   return $fetch ->fetchAll(PDO::FETCH_ASSOC);
   // }
-  // function debug($var){
-  //   echo"<pre>";
-  //    print_r($var);
-  //   echo"<pre>";
-  // }
+  function debug($var){
+    echo"<pre>";
+     print_r($var);
+    echo"<pre>";
+  }
   
   session_start();
   
