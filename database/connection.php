@@ -1,7 +1,4 @@
 <?php
-  ini_set('display_errors', '1');
-  ini_set('display_startup_errors', '1');
-  error_reporting(E_ALL);
 
   try {
     define("HOST","mysql:host=localhost;dbname=showroom");
@@ -37,7 +34,16 @@
      print_r($var);
     echo"<pre>";
   }
-  
+
+  ini_set('display_errors', '1');
+  ini_set('display_startup_errors', '1');
+  error_reporting(E_ALL);
+
+  $Engine_power = array('350cc', '480cc', '580cc', '720cc', '850cc' , '920cc', '1050cc' ,'1200cc');
+  $Bstype = array('BS3', 'BS4' ,'BS5' ,'BS6' , 'BS7');
+  $resolution = 'height="580" width="700"';
+  $resolution2 = 'height="100" width="100"';
+  // echo $resolution;
   session_start();
   
 ?>

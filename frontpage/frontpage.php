@@ -24,7 +24,7 @@
 	<!--btn------------>
 	<h3><font><?php echo $latest[0]['bike'];?></font></h3>
 	<b><a class="price"href="#"><?php echo $latest[0]['price'];?> <small>INR</small></a></b>
-	<a class="m-btn" href="#">Details</a>
+	<a class="m-btn" href="full-detail.php?id=<?php echo $latest[0]['id']; ?>">Details</a>
 	</div>
 	<!--social-------->
 		<div class="social">
@@ -52,7 +52,7 @@
 	<!--price--->
 	<b><a class="price"href="#"><?php echo $bikes['price'];?> <small>INR</small></a></b>
 	<!--buy-btn-->
-	<a class="buy-btn" href="#">More Details</a>
+	<a class="buy-btn" href="full-detail.php?id=<?php echo $bikes['id']; ?>">More Details</a>
 	</div>
 	<?php } ?>
 	</div>
@@ -73,7 +73,7 @@
 	<!--price--->
 	<b><a class="price"href="#"><?php echo $pricebased[0]['price'];?><small> INR</small></a></b>
 	<!--buy-btn-->
-	<a class="btn-expensive" href="#">More Details</a>
+	<a class="btn-expensive" href="full-detail.php?id=<?php echo $pricebased[0]['id']; ?>">More Details</a>
 	</div>
 	</div>
 
@@ -97,7 +97,7 @@
 		<!--price--->
 		<a class="price" href="#"><?php echo $cheapbike['price'];?><small> INR</small></a>
 		<!--buy-btn-->
-		<a class="buy-btn" href="#">More Details</a>
+		<a class="buy-btn" href="full-detail.php?id=<?php echo $cheapbike['id']; ?>">More Details</a>
 		</div>
 		<?php }?>
 	</section>

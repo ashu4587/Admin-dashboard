@@ -4,7 +4,7 @@
   </div>
   <div class="register-box-body">
     <p class="login-box-msg">Register a new membership</p>
-    <form action="" method="post" nctype="multipart/form-data">
+    <form action="" method="post" enctype="multipart/form-data">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" name="username" placeholder="username">
         <span class="fa fa-user form-control-feedback"></span>
@@ -54,7 +54,7 @@
         <span class="fa fa-lock form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="file" class="form-control" name="profile_pic" placeholder="Enter your city">
+      <input type="file" name="profile_image" multiple >
         <span class="fa fa-upload form-control-feedback"></span>
       </div>
       <div class="row">

@@ -39,6 +39,7 @@
             <li><a href="<?php echo URL; ?>Admin/dashboard.php"><i class="fa fa-list"></i> Dashboard v1</a></li>
             <li class="active"><a href="<?php echo URL; ?>lisiting/listing.php"><i class="fas fa-users"></i> &nbsp;All Users </a></li>
             <li class="active"><a href="<?php echo URL; ?>lisiting/listing.php"><i class="fa fa-circle text-success"></i> &nbsp;online Users</a> </li>
+            <li class="active"><a href="<?php echo URL; ?>lisiting/posts-listing.php"><i class="fa fa-file "></i> &nbsp;All Posts</a> </li>
           </ul>
         </li>
         <li class="treeview">

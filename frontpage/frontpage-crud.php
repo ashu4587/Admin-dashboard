@@ -11,7 +11,7 @@
   $listing->execute();
   $latest   = $listing->fetchAll(PDO::FETCH_ASSOC);
 
-  $fetch      = "SELECT * FROM `".POSTS."` ORDER BY `price` DESC ";
+  $fetch      = "SELECT * FROM `".POSTS."` ORDER BY `price` DESC";
   $listing    = $connection->prepare($fetch);
   $listing->execute();
   $pricebased = $listing->fetchAll(PDO::FETCH_ASSOC);

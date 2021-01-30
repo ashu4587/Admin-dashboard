@@ -12,9 +12,24 @@
     $address     = $_POST['address'];
     $adhaar_card = $_POST['adhaar_card'];
     $password    = $_POST['password'];
-    $profile_pic = $_POST['profile_pic'];
     $cpassword   = $_POST['cpassword'];
     $occupation  = "fresher";
+
+    #profile pic 
+      $profileimage  = $_FILES['profile_image'];
+      $profile_image = $_FILES['profile_image']['name'];
+      $file_tmp_name = $_FILES ['profile_image']['tmp_name'];
+      $file_type     = $_FILES ['profile_image']['size'];
+      $file_type     = $_FILES ['profile_image']['type'];
+      $file_type     = $_FILES ['profile_image']['error'];
+      $filefolder    =  '../file_uploads_profile/'.$profile_image;
+      $resolution    = '"height="100" width="100"';
+    
+      $filechange    = explode('.',$profile_image);
+      $filechange_agn = strtolower(end($filechange));
+      $allowed        = array('jpg','jpeg','png');
+      $imagecheck     = in_array($filechange_agn,$allowed);
+      move_uploaded_file($file_tmp_name,$filefolder);
     // $insert = "INSERT INTO `register`(`username`,`firstname`,`lastname`,`phone`,`email`,`country`,`state`,`city`,`address`,`adhaar_card`,`password`,`profile_pic`,`occupation`)VALUES('".$username."','".$firstname."','".$lastname."','".$phone."','".$email."','".$country."','".$state."','".$city."','".$address."','".$adhaar_card."','".$password."','".$profile_pic."','fresher')";
     // $query = mysqli_query($connection,$insert);
     // echo ($insert);
@@ -32,7 +47,7 @@
       'address'  => $address,
       'acard'    => $adhaar_card,
       'password' => $password,
-      'profile'  => $profile_pic,
+      'profile'  => $filefolder,
       'occu'     => $occupation,
     ]);
   }
