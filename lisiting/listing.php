@@ -1,5 +1,12 @@
 <?php 
   include '../database/connection.php';
+  if(
+    empty($_SESSION["login_id"]) ||
+    empty($_SESSION["login_pass"])
+  ){
+    header("Location:http://localhost/Admin-dashboard/login/crud-login.php");
+    exit();
+  }
   $delete_msg = $search = "";
   $check = false;
 
@@ -47,14 +54,17 @@
     if(empty($ids)){
       $delete_msg = "Please select an id to delete *";
       $delclr ="red";
+      $check = true;
     }
-    $records  = "DELETE FROM `".REGISTER."` WHERE `id` in ({$ids})";
-    $delete_selected = $connection->prepare($records);
-    $delete_selected->execute();
-    if($delete_selected == true){
-      // $delete_success = "Selected Records deleted Sucesfully";
-      // $delclr = "green";
-    }else{
+
+    if($check == false){
+      $records  = "DELETE FROM `".REGISTER."` WHERE `id` in ({$ids})";
+      $delete_selected = $connection->prepare($records);
+      $delete_selected->execute();
+    // if($delete_selected == true){
+      $delete_success = "Selected Records deleted Sucesfully";
+      $delclr = "green";
+     }else{
       $delete_failed= "there is an error in multidelete";
       $delclr = "red";
     }

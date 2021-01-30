@@ -12,18 +12,16 @@
     $bikimg = "Add image of bike :";
     $ptype = "Power type: ";
     $myear = "Model year";
-
-    $emptycheck = "This feild cannot be empty*";
   
     if(isset($_POST['post'])){
-      $username    = "ashu";
+      $username    = $_SESSION["login_user"];
       $bike        = $_POST['bike'];
       $model_no    = $_POST['model_no'];
       $price       = $_POST['price'];
       $engine      = $_POST['engine'];
       $engine_type = $_POST['engine_type'];
       $model_year  = $_POST['model_year'];
-      $power_type  = !empty($_POST['Power_type']) ? $_POST['Power_type'] :'';
+      $power_type  = !empty($_POST['Power_type']) ? $_POST['Power_type'] :'self start';
       $discription = $_POST['discription'];
 
       /*bike iamge variables.*/
@@ -111,6 +109,13 @@
         $color_img = "red";
       }
 
+      if(!empty($bike_image) && ($imagecheck) == false){
+        $bikimg = " Please Select Only jpg,png.jpeg type Files to upload: *";
+        $resolution ="";
+        $check = true;
+        $color_img = "red";
+      }
+
         //  echo $bike;  
       
   // debug($data);
@@ -138,7 +143,12 @@
 
         $bike = $power_type = $discription = $model_year = $engine_type = $engine = $model_no = $price = ""; 
         
-      } 
+      }else{
+        $msgexist = "There is an error to Post Data ";
+        // $msgexist = "This model is Already Posted *";
+        $warn = "fa fa-times-circle";
+        $style = "font-size:20px;color:red; padding:1px;";
+      }
     }
   }catch(PDOException $e){
     $msgexist = "Error :There is an error to Post Data ".$e->getMessage();

@@ -1,5 +1,13 @@
 <?php 
   include '../database/connection.php';
+  
+  if(
+    !empty($_SESSION["login_id"]) ||
+    !empty($_SESSION["login_pass"])
+  ){
+    header("Location:http://localhost/Admin-dashboard/Admin/dashboard.php");
+    exit();
+  }
   $msg = $msg1 =$msg2= $username = "";
 
   if(isset($_POST['login'])){
@@ -28,7 +36,7 @@
       
       $login  = $checkquery->fetchall(PDO::FETCH_ASSOC);
       $countRow = count($login);
-      debug($_SESSION);
+   
       if($countRow > 0){
         foreach($login as $login_data){
           $_SESSION["login_id"]   = $login_data['id'];
@@ -44,7 +52,7 @@
   }
 
   include PATH.DS.'header-footer'.DS.'header.php';
-  // include PATH.DS.'components'.DS.'navbar.php';
+  include PATH.DS.'components'.DS.'navbar.php';
   include PATH.DS.'login'.DS.'login.php';
   include PATH.DS.'header-footer'.DS.'footer.php';
 ?>

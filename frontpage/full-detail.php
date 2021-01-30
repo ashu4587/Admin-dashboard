@@ -77,8 +77,10 @@ border-radius:20px;
   </strong>
   </center>
   <center>
-    <div style="background-color:black ; padding:.5px; margin-top:50px">
-      <h3><b>May You Also Like This</b></h3>
+    <div style="background-color: #182b3a;
+background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+; padding:.5px; margin-top:50px; border-radius:10px;">
+      <h3><b>You May Also Like This</b></h3>
     </div>
   </center>
   

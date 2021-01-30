@@ -38,9 +38,7 @@
     <h4 class="login-box-msg">Add Your posts here</h4>
 
     <form  method="post" action="" role="form" enctype="multipart/form-data">
-
     <div class="messages"></div>
-
     <div class="controls">
 
         <div class="row">

@@ -40,9 +40,12 @@
   error_reporting(E_ALL);
 
   $Engine_power = array('350cc', '480cc', '580cc', '720cc', '850cc' , '920cc', '1050cc' ,'1200cc');
-  $Bstype = array('BS3', 'BS4' ,'BS5' ,'BS6' , 'BS7');
-  $resolution = 'height="580" width="700"';
-  $resolution2 = 'height="100" width="100"';
+  $Bstype       = array('BS3', 'BS4' ,'BS5' ,'BS6' , 'BS7');
+  $resolution   = 'height="580" width="700"';
+  $resolution2  = 'height="100" width="100"';
+  $emptycheck   = "This feild cannot be empty *";
+  $color        = "black";
+  $smallstyle   = "black";
   // echo $resolution;
   session_start();
   

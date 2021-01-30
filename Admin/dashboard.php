@@ -1,8 +1,17 @@
-<?php include '../database/connection.php'; ?>
-<?php include PATH.DS.'header-footer'.DS.'header.php'; ?>
-
-<?php include PATH.DS.'header-footer'.DS.'main-header.php'; ?>    
-<?php include PATH.DS.'components'.DS.'sidebar.php'; ?>
+<?php 
+  include '../database/connection.php'; 
+  if(
+    empty($_SESSION["login_id"]) ||
+    empty($_SESSION["login_pass"])
+  ){
+    header("Location:http://localhost/Admin-dashboard/login/crud-login.php");
+    exit();
+  }
+  
+  include PATH.DS.'header-footer'.DS.'header.php';
+  include PATH.DS.'header-footer'.DS.'main-header.php';  
+  include PATH.DS.'components'.DS.'sidebar.php'; 
+ ?>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
