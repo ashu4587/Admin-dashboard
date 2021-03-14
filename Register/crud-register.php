@@ -5,7 +5,7 @@
   $username_empty= "Enter a username" ;
   $fname         = "Enter your firstname";
   $lname         = "Enter your lastname";
-  $phn           = "Enter your phone no";
+  $phn           = "Enter your phone no"; 
   $email1        = "Enter your email  ";
   $cntry         = "Enter your country";
   $st            = "Enter your state";
@@ -36,7 +36,7 @@
 
     #profile pic 
     $profileimage  = $_FILES['profile_image'];
-    $profile_image = $_FILES['profile_image']['name'];
+    $profile_image = $profileimage['name'];
     $file_tmp_name = $_FILES ['profile_image']['tmp_name'];
     $file_type     = $_FILES ['profile_image']['size'];
     $file_type     = $_FILES ['profile_image']['type'];
@@ -47,6 +47,7 @@
     $filechange_agn = strtolower(end($filechange));
     $allowed        = array('jpg','jpeg','png');
     $imagecheck     = in_array($filechange_agn,$allowed);
+    
     move_uploaded_file($file_tmp_name,$filefolder);
     // $insert = "INSERT INTO `register`(`username`,`firstname`,`lastname`,`phone`,`email`,`country`,`state`,`city`,`address`,`adhaar_card`,`password`,`profile_pic`,`occupation`)VALUES('".$username."','".$firstname."','".$lastname."','".$phone."','".$email."','".$country."','".$state."','".$city."','".$address."','".$adhaar_card."','".$password."','".$profile_pic."','fresher')";
     // $query = mysqli_query($connection,$insert);
@@ -61,6 +62,12 @@
       $check = true;
       $color_p = "red";
       $email1 = "email cannot be empty *";
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+      $check = true;
+      $color_p = "red";
+      $msgexist = "Please add a valid email *";
     }
 
     if(empty($adhaar_card)){

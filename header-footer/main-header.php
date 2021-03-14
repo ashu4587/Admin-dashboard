@@ -2,7 +2,7 @@
 <div class="wrapper">
 <header class="main-header">
     <!-- Logo -->
-    <a href="<?php echo URL;?>frontpage/frontpage-crud.php" class="logo">
+    <a href="<?php echo URL;?>frontpage/index.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <!-- logo for regular state and mobile devices -->
       <img src="<?php echo URL;?>images/BMW.png" style="height:55px; width:55px; margin-top:-5px; margin-left:-20px">
@@ -14,7 +14,6 @@
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
-      <a class= "logo" href="<?php echo URL;?>frontpage/frontpage-crud.php" style="margin-right:50px;"><span >HOME</span></a>
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
